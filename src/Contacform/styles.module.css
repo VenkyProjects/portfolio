@@ -3,12 +3,19 @@
     margin-right: 20px;
     @media(max-width:787px){
         max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 .form_container h2{
     display: flex;
     justify-content: center;
     color: white;
+    @media(max-width:787px){
+        width:150%;
+    }
 }
 .form_container form input,textarea {
     width: 100%;
@@ -17,6 +24,11 @@
     box-sizing: border-box;
     border: none;
     border-radius: 5px;
+    @media(max-width:787px){
+        display: flex;
+        width: 150%;
+        justify-content: center;
+    }
 }
 .form_container form button {
     width: 100%;
@@ -24,4 +36,7 @@
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
+    @media(max-width:787px){
+        width: 150%;
+    }
 }
