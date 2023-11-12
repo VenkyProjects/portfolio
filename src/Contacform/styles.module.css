@@ -1,0 +1,27 @@
+.form_container{
+    max-width: 300px;
+    margin-right: 20px;
+    @media(max-width:787px){
+        max-width: 300px;
+    }
+}
+.form_container h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.form_container form input,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+.form_container form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
