@@ -52,7 +52,7 @@ p {
     display: flex;
     white-space: pre;
     @media(max-width:800px){
-        font-size: 35px;
+        font-size: 36px;
     }
 }
 .text{
