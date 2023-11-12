@@ -35,7 +35,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
     line-height: 1.5; /* Adjust line height for better readability */
     @media(max-width:800px){
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 p {
@@ -70,3 +70,36 @@ text {
     font-size: 36px;
     fill: white; /* Green color, change as needed */
 }
+.resumeButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 2s ease;
+    animation: rotateAndTranslate 3s ease forwards;
+    /* &:hover {
+      background-color: #9ab3c3;
+      transform: rotateX(90deg);
+    } */
+}
+@keyframes rotateAndTranslate {
+    0% {
+      transform: translateX(0) rotate(0); /* Initial position */
+    }
+    50% {
+      transform: translateX(0) rotate(360deg); /* Rotate the button by 180 degrees */
+    }
+    75%{
+        transform: translateX(200px) rotate(180deg);
+    }
+    100% {
+      transform: translateX(0) rotate(360deg); /* Translate the button to the right and keep it rotated */
+    }
+    
+  }
+
+

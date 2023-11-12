@@ -31,6 +31,21 @@ const FlowingText = ({ words, speed }) => {
 
   return <div>{`${displayText}`}</div>;
 };
+
+const ResumeButton = () => {
+  const resumeLink = 'https://drive.google.com/file/d/1Gn6rhCX0GKmJ_kyaB3RGjMea5_2eepuk/view?usp=sharing';
+
+  const openResume = () => {
+    window.open(resumeLink, '_blank');
+  };
+
+  return (
+    <button className={styles.resumeButton} onClick={openResume}>
+      View Resume
+    </button>
+  );
+};
+
 function Portfolio(){
   const words = ['freelancer', 'developer', 'designer'];
   return(
@@ -39,7 +54,8 @@ function Portfolio(){
               <div className={styles.name}>Sunke Venkateswarlu</div>
               <p>I'm <FlowingText words={words} speed={300} /></p>
               <div>
-                  <SocialMedia/>
+                <SocialMedia/>
+                <ResumeButton/>
               </div>
           </div>
       </div>
