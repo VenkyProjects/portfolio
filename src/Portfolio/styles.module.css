@@ -35,7 +35,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
     line-height: 1.5; /* Adjust line height for better readability */
     @media(max-width:800px){
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 p {
