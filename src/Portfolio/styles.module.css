@@ -1,0 +1,72 @@
+.top{
+    /* background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background-image: url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover; /* Adjust the size of the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    @media(max-width:787px){
+        background-image: url("https://images.unsplash.com/photo-1575141251061-c8259641ed63?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+}
+.main{
+    position: relative;
+    filter: brightness(1.2);
+    z-index: 3;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    font-family: 'Luminari', fantasy;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    line-height: 1.5; /* Adjust line height for better readability */
+    @media(max-width:800px){
+        font-size: 33px;
+    }
+}
+p {
+    font-family: 'Snell Roundhand', cursive;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 50px;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    min-height: 55px;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    line-height: 1.5; /* Adjust line height for better readability */
+    display: flex;
+    white-space: pre;
+    @media(max-width:800px){
+        font-size: 33px;
+    }
+}
+.text{
+    margin-left:2px;
+    margin-right: 2px;
+}
+
+/* Additional styling for italicized text */
+p em {
+    font-style: normal; /* Override the italic style for emphasized text */
+    color: #ffcc00; /* Set a different color for emphasized text */
+}
+text {
+    font-family: 'Snell Roundhand', cursive;
+    font-size: 36px;
+    fill: white; /* Green color, change as needed */
+}
