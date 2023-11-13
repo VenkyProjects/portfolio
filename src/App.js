@@ -5,8 +5,10 @@ import Contactform from './Contacform';
 function App() {
   return (
     <div className="top">
-      <Portfolio/>  
-      <Contactform/>
+      <Portfolio/>
+      <div className='main'>
+        <Contactform/>
+      </div>  
     </div>
     
   );
