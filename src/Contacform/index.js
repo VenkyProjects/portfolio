@@ -14,7 +14,7 @@ function Contactform(){
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          await axios.post('https://mernback-jdzc.onrender.com/data/', formData);
+          await axios.post('https://venkyapistestss.onrender.com/data/', formData);
           alert('Form submitted successfully!');
           // Clear form after submission
           setFormData({ name: '', email: '', subject: '' ,message:'',phone_number:''});
